@@ -348,3 +348,5 @@ For homework, ask students to extend a given tool: e.g., add non‑determinism, 
 For project: use the TM simulator (item 8) to let students define a Turing machine for a language described in the book (e.g., palindromes) and show acceptance/non‑acceptance.				
 Use item 5 or 6 for advanced modules (optional for undergrads) when you dive into transformations, profiling, I/O automata, etc.				
 If you like, I can rank these by ease of use, classroom‑readiness, and student programming‑level (beginner vs intermediate vs advanced), and provide download links + setup instructions (for Python, Java, Web) for each. Do you want that?		
+## Reference
+https://qiita.com/kaizen_nagoya/items/a81681936ae3daa8261a
