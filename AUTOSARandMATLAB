@@ -193,3 +193,5 @@ Virtual testing
 vVirtual Target receives both SWC/ECU config (ARXML) and diagnostic event inputs (Simulink Test)
 If you want, I can make a single, polished diagram showing all the tools, diagnostics, ARXML, CDD, DBC, and virtual testing in one unified view — suitable for documentation or presentations.
 Do you want me to create that unified “all-in-one” diagram?
+## Reference
+https://qiita.com/kaizen_nagoya/items/0274936d812455124fa7
