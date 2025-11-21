@@ -1,0 +1,232 @@
+# git jira automation with ChatGPT
+## Request
+How can we get people who manually enter data into Jira to get used to automating things like CI/CO using git tools like bitbucket?
+## Answer by ChatGPT
+Getting people who are used to manual Jira updates to adopt automation like CI/CD with Git/Bitbucket is as much about behavioral change and education as it is about technology. Here’s a structured approach:
+Start with Awareness and Education
+Explain the “why” clearly:
+Manual updates are error-prone and slow.
+Automation reduces repetitive work and improves traceability.
+CI/CD ensures code quality and faster delivery.
+Hands-on workshops:
+Show simple examples: pushing a branch triggers a pipeline and automatically updates Jira status.
+Demonstrate Bitbucket Pipelines, Jira automation rules, and hooks in a sandbox project.
+Tip: People resist what they don’t understand. Visuals showing the flow “Git commit → CI → Jira update → deployment” help.
+Introduce Incremental Automation
+Don’t switch everything at once. Start small:
+Automate one repetitive task first, like auto-transitioning Jira issues when code is merged.
+Use Bitbucket webhooks or Jira Automation for lightweight automation.
+Celebrate small wins to show tangible benefits (time saved, fewer errors).
+Integrate Jira With Git Tools
+Use Jira Smart Commits:
+Developers can include Jira IDs in commit messages to automatically transition issues or log work.
+Configure automatic updates:
+Branch creation → Jira issue moves to “In Progress”.
+Merge/pull request → Jira issue moves to “Code Review” or “Done”.
+Use Bitbucket Pipelines to trigger builds and deployments and reflect status in Jira.
+Provide Templates and Examples
+Pre-made branch naming templates: feature/JIRA-123-description.
+Pre-built CI/CD pipeline snippets with Jira integration.
+Share success stories within the team: “Before automation we spent 5 hours per week updating Jira; now it’s automatic.”
+Encourage a Culture of Automation
+Make manual work less attractive:
+Set expectations that Jira updates via manual entry should be minimized.
+Reward automation adoption:
+Highlight contributors who set up pipelines, automated workflows, or improved CI/CD processes.
+Lead by example:
+Senior engineers or team leads should model automated workflows.
+Offer Continuous Support
+Q&A sessions, office hours, or pair programming sessions to ease the transition.
+Documentation and cheat sheets for common tasks (commits, pull requests, smart commits, pipeline triggers).
+Track Progress
+Use metrics to show impact:
+Time spent on Jira updates.
+Number of automated transitions.
+Build frequency or deployment speed.
+💡 Key Principle: Humans adopt automation best when they see immediate benefit and when the learning curve is manageable. If the first experience is frustrating, they revert to manual methods. Start small, show wins, and scale gradually.
+If you want, I can sketch a practical “first automation step” workflow specifically for someone who currently only updates Jira manually, showing exactly how Git/Bitbucket and Jira can replace that manual step. It would be a visual step-by-step guide.
+Do you want me to do that?
+## Request
+How can we get people who manually enter data into Jira to get used to automating things like CI/CO using git tools like bitbucket?
+## Answer by ChatGPT
+Here are three recommended references (other than Wikipedia) for each of the steps outlined earlier. These will help deepen understanding of the “why”, how to integrate tools, and how to change culture + behaviour.
+Start with Awareness and Education
+“The Product Culture Shift. Hint: The change starts in engineering” — a reflective article on how engineering teams shift mindset from manual processes to product‑/platform‑oriented workflows.
+Medium
+“What is Change Management in Software Development?” — an article discussing how change management supports transitions in software teams.
+チームハブ
+“Change Management has a Critical Role in Automation” — article emphasising how people/process change matter for successful automation.
+LIGS University
+Introduce Incremental Automation
+“8 CI/CD Best Practices for Your DevOps Journey” — a blog that outlines how to get started with CI/CD and the importance of incremental improvements.
+CloudBees
+“10 Best Practices for CI/CD Pipelines” — a deeper dive on practical steps (e.g., make small changes) which is useful for incremental automation.
+Dataversity
+“How to keep up with CI/CD best practices” — article from the GitLab blog discussing continuing improvement in CI/CD.
+about.gitlab.com
+Integrate Jira with Git Tools
+“Bitbucket Integration with Jira: Step‑by‑Step Guide” — practical guide on how to hook up Jira Cloud and Bitbucket Cloud to streamline workflow.
+OneNine
+“Use Smart Commits | Bitbucket Cloud” — official Atlassian documentation on how to enable smart commits for Jira/Bitbucket integration.
+Atlassian Support
++1
+“Reference work items in your development projects | Jira Cloud” — documentation on how commits/branches link back to Jira issues automatically.
+Atlassian Support
+Provide Templates and Examples
+“Smart Commits examples to use with Git and Automation for Jira” — blog that gives concrete commit message examples for Jira automation.
+Midori
+“Smart Commits Overview | Git Integration for Jira Cloud” — documentation of how smart commits work, which helps when building templates.
+GitKraken Help Center
+“Use Smart Commits | Bitbucket Data Center” — Atlassian doc explaining syntax and usage of smart commits in Jira/Bitbucket context.
+Atlassian Documentation
+Encourage a Culture of Automation
+“Change Management has a Critical Role in Automation” — again relevant here, emphasising culture and people aspects of automation adoption.
+LIGS University
+“Determinants of Effective Change Management for Software …” — academic study on factors influencing change management in agile settings.
+ScholarWorks
+“The Best Practice for CI/CD? Enabling Fast Flow in Program Increments” — article on how enabling flow (automation, limiting manual bottlenecks) helps create automated culture.
+DevPro Journal
+Offer Continuous Support
+“The Product Culture Shift. Hint: The change starts in engineering” — touches on how ongoing support and mindset shifts are needed.
+Medium
+“Continuous Delivery: Overcoming adoption challenges” — a research article on ongoing support and structural issues in automation adoption.
+サイエンスダイレクト
+“Change Management is …” (from turn0search27) — again relevant for continuous support of change in teams.
+Track Progress
+“CI/CD Best Practices: Building Reliable Pipelines” (PDF, Apr 2025) — discusses metrics like deployment frequency, change lead time, which are useful to track.
+EAジャーナルズ
+“8 CI/CD Best Practices for Your DevOps Journey” — includes monitoring / measuring pipeline success.
+CloudBees
+“Determinants of Effective Change Management …” — includes factors you can measure or track for cultural/process change.
+ScholarWorks
+If you like, I can collect and send you a curated reading list (PDFs + blog posts) with these references plus direct download links where available, grouped by step. Would you like that?
+yes
+
+Here is a curated reading list (PDFs + blog posts) grouped by the steps we discussed. Each reference is not Wikipedia, and provides useful depth for your team’s automation journey.
+
+Start with Awareness and Education
+Harvard Division of Continuing Education — “7 Reasons Why Change Management Strategies Fail and How to Avoid Them” (blog) — discusses why change matters and how to lead it.
+professional.dce.harvard.edu
+Ivey Business School — “Using a Change Management Approach to Implement IT Programs” (article) — shows how organizational change links with IT transformation.
+iveybusinessjournal.com
+Software Engineering Institute (via an interview) — “Change Management and Software Engineering: The Intersections” — explores how change management applies to engineering teams.
+Cameron Conaway
+Introduce Incremental Automation
+Spacelift — “CI/CD Pipeline : Everything You Need To Know” (blog) — a solid primer on CI/CD fundamentals and incremental introduction.
+Spacelift
++1
+GitLab — “Continuous Integration Best Practices” (blog) — on committing often, integrating early to build confidence.
+about.gitlab.com
+Codefresh — “11 CI/CD Best Practices for DevOps Success” — practical tactics for getting started and scaling.
+Codefresh
+Integrate Jira with Git Tools
+Jira Software & Bitbucket — “5 Ways to Make the Most of Jira Software and Bitbucket Cloud Integration” (Atlassian blog) — real‑world benefits of integration.
+Atlassian
+“Why integrate Jira and Bitbucket?” (blog) — explains transparency, efficiency gains when they’re linked.
+Eficode.com
+“Bitbucket Integration with Jira: Step‑by‑Step Guide” — a recent guide showing how to set it up.
+OneNine
+Provide Templates and Examples
+“Jira Bitbucket Integration: the Complete Guide for 2024” — detailed walkthrough and examples of branch naming, linking commits, workflows.
+idalko.com
+A blog on smart‑commits & linking development work items (e.g., commit messages triggering Jira transitions) — e.g., the Apex App Lab guide.
+blog.apexapplab.dev
+For CI/CD templates: e.g., “Best Practices for Successful CI/CD | TeamCity” which gives reusable checklist items.
+JetBrains
+Encourage a Culture of Automation
+“Change Management: From Theory to Practice” (PMC article) — shows strategies and models for organisational change which are relevant for culture shifts.
+PMC
+“Navigating Project Change: A Comprehensive Review of Change Management Strategies and Practices” — academic review useful for deeper understanding.
+researchgate.net
+“Change Management Methods and Tools for Digital Transformation” — connects change management specifically in digital/tech contexts.
+researchgate.net
+Offer Continuous Support
+The same “Change Management: From Theory to Practice” also covers sustaining change — useful for ongoing support phase.
+PMC
+“Change Management Practices for Adopting New Technology Solutions” (ITcon paper) — directly relevant to supporting technology adoption (automation).
+itcon.org
+Blog posts/white papers on CI/CD iteration and continuous improvement (e.g., Spacelift, LaunchDarkly) — for supporting automation workflows. e.g., “Ultimate Guide to CI/CD Fundamentals to Advanced Implementation” (GitLab)
+about.gitlab.com
+Track Progress
+White‑paper/blog style: “Ultimate Guide to CI/CD: Fundamentals to Advanced Implementation” — includes metrics and measurement of pipeline success.
+about.gitlab.com
+AWS Prescriptive Guidance — “Best practices for CI/CD pipelines” includes aspects of control, monitoring and metrics.
+AWS ドキュメント
+Academic/review: “The Role of Change Management in Successful Software Projects” — includes measurement of change outcomes, which you can adapt for tracking progress.
+MoldStud
+If you like, I can compile these into a shareable PDF document (with links and summaries) tailored for your team in Japanese (since you're in Japan) to help them onboard more easily. Would you like that?
+yes
+
+Jira Git Automation References md-zip: https://researchmap.jp/multidatabases/multidatabase_contents/download/231120/031bfe76614f9aaf8ee8f86da963b353/42194?col_no=2&frame_id=576083
+Title: Curated References for Jira to Git/CI-CD Automation Adoption
+Purpose: A shareable reading list for teams transitioning from manual Jira processes to automated workflows using Bitbucket, CI/CD, and Jira automation. Includes links, summaries, and grouped by adoption step.
+
+Start with Awareness and Education
+Harvard DCE Blog - "7 Reasons Why Change Management Strategies Fail and How to Avoid Them"
+Discusses why change matters and strategies for leading it.
+Link
+Ivey Business Journal - "Using a Change Management Approach to Implement IT Programs"
+How organizational change links with IT transformation.
+Link
+Software Engineering Institute - "Change Management and Software Engineering: The Intersections"
+Explores how change management applies to engineering teams.
+Link
+Introduce Incremental Automation
+Spacelift - "CI/CD Pipeline: Everything You Need To Know"
+Primer on CI/CD fundamentals and incremental introduction.
+Link
+GitLab - "Continuous Integration Best Practices"
+Guidance on committing often and integrating early.
+Link
+Codefresh - "11 CI/CD Best Practices for DevOps Success"
+Practical tactics for starting and scaling automation.
+Link
+Integrate Jira with Git Tools
+Atlassian Blog - "5 Ways to Make the Most of Jira Software and Bitbucket Cloud Integration"
+Real-world benefits of Jira-Bitbucket integration.
+Link
+Eficode Blog - "Why integrate Jira and Bitbucket?"
+Explains transparency and efficiency gains.
+Link
+OneNine Blog - "Bitbucket Integration with Jira: Step-by-Step Guide"
+Practical setup guide.
+Link
+Provide Templates and Examples
+Idalko Blog - "Jira Bitbucket Integration: the Complete Guide for 2024"
+Walkthrough and examples of branch naming, linking commits, workflows.
+Link
+Apex App Lab Blog - "Streamline Your Development Workflow: Bitbucket and Jira Integration Guide"
+Smart commit examples.
+Link
+JetBrains TeamCity Guide - "Best Practices for Successful CI/CD"
+Reusable CI/CD checklist items.
+Link
+Encourage a Culture of Automation
+PMC Article - "Change Management: From Theory to Practice"
+Strategies and models for organizational change.
+Link
+ResearchGate - "Navigating Project Change: A Comprehensive Review of Change Management Strategies and Practices"
+Academic review of change management strategies.
+Link
+ResearchGate - "Change Management Methods and Tools for Digital Transformation"
+Focus on digital/technical contexts.
+Link
+Offer Continuous Support
+PMC Article - same as above, covers sustaining change.
+Link
+ITcon Paper - "Change Management Practices for Adopting New Technology Solutions"
+Supporting technology adoption and automation.
+Link
+GitLab Blog - "Ultimate Guide to CI/CD: Fundamentals to Advanced Implementation"
+Continuous improvement of automation workflows.
+Link
+Track Progress
+GitLab Blog - same as above; includes metrics for pipeline success.
+Link
+AWS Prescriptive Guidance - "Best practices for CI/CD pipelines"
+Monitoring and metrics guidance.
+Link
+MoldStud Article - "The Role of Change Management in Successful Software Projects"
+Measurement of change outcomes, adapted for tracking progress.
+Link
+I’ve compiled the curated reading list into a shareable document with summaries and direct links for each step of transitioning from manual Jira updates to automated Git/CI/CD workflows. You can use this as a guide for your team’s onboarding and training.
